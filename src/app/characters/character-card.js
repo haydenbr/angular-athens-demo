@@ -14,6 +14,7 @@
             templateUrl: 'app/characters/character-card.html'
         });
 
+    CharacterCard.$inject = ['imageService', 'characterService'];
     function CharacterCard(imageService, characterService) {
         var vm = this;
         vm.getCharacterImage = getCharacterImage;

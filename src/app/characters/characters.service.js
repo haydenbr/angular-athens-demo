@@ -4,8 +4,8 @@
     angular
         .module('ngaApp.characters')
         .service('characterService', characterService);
-    
-    /* @ngInject */
+
+    characterService.$inject = ['$http', '$filter', 'apiUrl']
     function characterService($http, $filter, apiUrl) {
         var service = {
             getCharacters: getCharacters,

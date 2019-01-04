@@ -10,6 +10,7 @@
             templateUrl: 'app/layout/topnav.html'
         });
 
+    Topnav.$inject = ['settings'];
     function Topnav(settings) {
         var vm = this;
         vm.title = '';

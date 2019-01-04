@@ -13,6 +13,7 @@
             templateUrl: 'app/comics/comic-detail.html'
         });
 
+    ComicDetail.$inject = ['imageService'];
     function ComicDetail(imageService) {
         var vm = this;
         vm.getComicImage = getComicImage;

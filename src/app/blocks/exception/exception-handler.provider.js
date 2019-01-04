@@ -21,11 +21,12 @@
         };
     }
 
-    /* @ngInject */
+    config.$inject = ['$provide'];
     function config($provide) {
         $provide.decorator('$exceptionHandler', extendExceptionHandler);
     }
 
+    extendExceptionHandler.$inject = ['$delegate', 'exceptionHandler', 'logger'];
     function extendExceptionHandler($delegate, exceptionHandler, logger) {
         return function(exception, cause) {
             var appErrorPrefix = exceptionHandler.config.appErrorPrefix || '';

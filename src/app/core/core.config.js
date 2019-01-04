@@ -5,7 +5,7 @@
         .module('ngaApp.core')
         .config(configure);
 
-    /* @ngInject */
+    configure.$inject = ['$compileProvider', '$logProvider', '$httpProvider', 'exceptionHandlerProvider', 'settings', 'toastr', 'toastTimeout']
     function configure($compileProvider, $logProvider, $httpProvider, exceptionHandlerProvider, settings, toastr, toastTimeout) {
         // disable debug info and log messages
         $compileProvider.debugInfoEnabled(false);

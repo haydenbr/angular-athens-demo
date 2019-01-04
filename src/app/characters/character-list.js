@@ -10,6 +10,7 @@
             templateUrl: 'app/characters/character-list.html'
         });
 
+    CharacterList.$inject = ['$mdSidenav', 'characterService'];
     function CharacterList($mdSidenav, characterService) {
         var vm = this;
         vm.characters = [];
@@ -25,10 +26,10 @@
         }
 
         function search(name) {
-            if (name) { 
+            if (name) {
                 vm.isVisible = false;
                 vm.showProgress = true;
-                
+
                 characterService.getCharacters(name).then(charactersGetComplete).finally(function() { vm.showProgress = false; });
             } else {
                 vm.showProgress = false;

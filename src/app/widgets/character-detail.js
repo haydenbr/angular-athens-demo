@@ -13,6 +13,8 @@
             templateUrl: 'app/widgets/character-detail.html'
         });
 
+    CharacterDetail.$inject = ['imageService', 'characterService']
+
     function CharacterDetail(imageService, characterService) {
         var vm = this;
         vm.getAvatar = getAvatar;

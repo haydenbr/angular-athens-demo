@@ -5,7 +5,7 @@
         .module('blocks.logger')
         .factory('logger', logger);
 
-    /* @ngInject */
+    logger.$inject = ['$log', 'toastr'];
     function logger($log, toastr) {
         var service = {
             error   : error,

@@ -10,6 +10,8 @@
             templateUrl: 'app/quiz/quiz.html'
         });
 
+    Quiz.$inject = ['$filter', '$mdToast', 'quizService'];
+
     function Quiz($filter, $mdToast, quizService) {
         var vm = this;
         vm.hero = null;

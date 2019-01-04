@@ -13,6 +13,7 @@
             templateUrl: 'app/comics/comic-list.html'
         });
 
+    ComicList.$inject = ['comicService']
     function ComicList(comicService) {
         var vm = this;
         vm.comics = [];

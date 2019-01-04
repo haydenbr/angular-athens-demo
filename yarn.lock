@@ -525,40 +525,40 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
-angular-animate@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.6.9.tgz#a0f926c1ba3190bd8929ef966a7fa79760682622"
-  integrity sha512-3/fqrmT6mJgB2O6oDvXDlNP6AJVqUXLWZq/P87Xo7Wt0JjcSmhJSQ02Yp7gm0Pkd5SXMKHICLpn/iEJPyse9fg==
+angular-animate@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.7.5.tgz#1ffc6c2a9cdee227a2ba79cc6cd8f71ec44db5dc"
+  integrity sha512-kU/fHIGf2a4a3bH7E1tzALTHk+QfoUSCK9fEcMFisd6ZWvNDwPzXWAilItqOC3EDiAXPmGHaNc9/aXiD9xrAxQ==
 
-angular-aria@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.6.9.tgz#150fa603ba7f604f48e3715b76ab3ec4b78971a6"
-  integrity sha512-I2SR17Ux0o0R9KD3DRzjR5NNX3pUSKvtWYLFCLg22qvR5+736olCQSyptNIvKsvjALwfXBw1Irdlq0jyohDn+Q==
+angular-aria@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.7.5.tgz#e66334d80ad6b4b01f005f590d7c7eef0064312f"
+  integrity sha512-X2dGRw+PK7hrV7/X1Ns4e5P3KC/OBFi1l7z//D/v7zbZObsAx48qBoX7unsck+s4+mnO+ikNNkHG5N49VfAyRw==
 
-angular-material@1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/angular-material/-/angular-material-1.1.7.tgz#b3ebe28bc884495285932fb9cf4f58ed6ce6f4ab"
-  integrity sha512-nIEkTk2BfEmqOLXtBFrc39aAwDsM3oNXOQBUqtTA8cxD0OjTKAnkfJaVPWmqFa/h3pt1JhvP+R2Ispg9/skl4A==
+angular-material@1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/angular-material/-/angular-material-1.1.11.tgz#a989c586d413be1c67fb8f077c7e38a8e2f9d1be"
+  integrity sha512-einmcNSPxxvZo4NijZR4/k80+UKcbWqNLFCHeee/sU2tD1c7LUnFkOUde99Nmj5a6/L/wb91LmpRMbU1Vb9j7A==
 
-angular-messages@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.6.9.tgz#c6958a32ab49316af36e3e5ac6f94c361571fa72"
-  integrity sha512-/2xvG6vDC+Us8h0baSa1siDKwPj5R2A7LldxxhK2339HInc09bq9shMVCUy9zqnuvwnDUJ/DSgkSaBoSHSZrqg==
+angular-messages@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.7.5.tgz#7c2fd781315a43a19838b117da0142a988454e14"
+  integrity sha512-YDpJpFLyrIgZjE/sIAjgww1y6r3QqXBJbNDI0QjftD37vHXLkwvAOo3A4bxPw8BikyGLcJrFrgf6hRAzntJIWA==
 
-angular-mocks@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.6.9.tgz#4fed8c8293a5080e0919a7ff0dcf0f704864b7ba"
-  integrity sha512-5aEwXmfd5DQvb64pOgP2W2D3ozAQSARkB6q+6NQfUJvJs9bD2YcExrUc1P4EbiIuyWag2OQM+pIKUNojVi3SBg==
+angular-mocks@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.7.5.tgz#c8baba5a06ed60b934697026b492169626af384b"
+  integrity sha512-I+Ue2Bkx6R9W5178DYrNvzjIdGh4wKKoCWsgz8dc7ysH4mA70Q3M9v5xRF0RUu7r+2CZj+nDeUecvh2paxcYvg==
 
-angular-resource@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.6.9.tgz#d02334b7cb96353e245966ad044c0c673df7b685"
-  integrity sha512-RNGjhQWGVz5EB1Z1miQNkpwhp2htcBgKRMxeXtNUZf53O1AxwrPy9HajDXi2Lub+tO72TPQOy4HOMW4xmGXz6g==
+angular-resource@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.7.5.tgz#80007af3aed8b6278bf2344e8e5257ea7bca333e"
+  integrity sha512-zlCKVNa2nnZNb4Lz3YFPKhsYG+v+t4STEsjkWRbii6PfwSrtH9R/zGpCOkBNFnq3naeZMMmd5aIIgHi5a7k9jA==
 
-angular-sanitize@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.9.tgz#1adba33f6f513e5f93e3aca8071bef53666739ea"
-  integrity sha512-zWGQHWvmftkPTR0s6RCF9gx/pezR1V0swcVrkimMyBW3eK3ly7inG5BDDSt2oGExhWufV2VfnIv01T+tBUckNg==
+angular-sanitize@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.7.5.tgz#75d49e15071ca9c70581e76d20940f26372e24d2"
+  integrity sha512-wjKCJOIwrkEvfD0keTnKGi6We13gtoCAQIHcdoqyoo3gwvcgNfYymVQIS3+iCGVcjfWz0jHuS3KgB4ysRWsTTA==
 
 angular-ui-router@0.4.2:
   version "0.4.2"
@@ -567,12 +567,7 @@ angular-ui-router@0.4.2:
   dependencies:
     angular "^1.0.8"
 
-angular@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.9.tgz#bc812932e18909038412d594a5990f4bb66c0619"
-  integrity sha512-6igWH2GIsxV+J38wNWCh8oyjaZsrIPIDO35twloIUyjlF2Yit6UyLAWujHP05ma/LFxTsx4NtYibRoMNBXPR1A==
-
-angular@^1.0.8:
+angular@1.7.5, angular@^1.0.8:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.5.tgz#d1c1c01c6f5dc835638f3f9aa51012857bdac49e"
   integrity sha512-760183yxtGzni740IBTieNuWLtPNAoMqvmC0Z62UoU0I3nqk+VJuO3JbQAXOyvo3Oy/ZsdNQwrSTh/B0OQZjNw==

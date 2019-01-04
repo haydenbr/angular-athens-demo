@@ -4,8 +4,9 @@
     angular
         .module('ngaApp.comics')
         .service('comicService', comicService);
-    
-    /* @ngInject */
+
+
+    comicService.$inject = ['$http', 'apiUrl'];
     function comicService($http, apiUrl) {
         var service = {
             getComics: getComics

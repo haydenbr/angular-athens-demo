@@ -13,6 +13,8 @@
             templateUrl: 'app/quiz/question.html'
         });
 
+    Question.$inject = ['quizService'];
+
     function Question(quizService) {
         var vm = this;
         vm.answer = null;

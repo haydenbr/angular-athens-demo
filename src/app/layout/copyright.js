@@ -10,6 +10,8 @@
             templateUrl: 'app/layout/copyright.html'
         });
 
+    Copyright.$inject = ['settings'];
+
     function Copyright(settings) {
         var vm = this;
 

@@ -5,7 +5,7 @@
         .module('ngaApp.core')
         .service('imageService', imageService);
     
-    /* @ngInject */
+    
     function imageService() {
         var service = {
             getImage: getImage
