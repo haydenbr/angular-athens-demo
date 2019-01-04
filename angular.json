@@ -1,0 +1,177 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-athens-demo": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss",
+          "spec": false
+        },
+        "@schematics/angular:class": {
+          "spec": false
+        },
+        "@schematics/angular:directive": {
+          "spec": false
+        },
+        "@schematics/angular:guard": {
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:pipe": {
+          "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-athens-demo",
+            "index": "src/index.html",
+            "main": "src/app/app.js",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/angular-material/angular-material.css",
+              "node_modules/toastr/build/toastr.css",
+              "src/styles.css",
+              "node_modules/components-font-awesome/css/font-awesome.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/toastr/toastr.js",
+              "node_modules/angular/angular.js",
+              "node_modules/angular-animate/angular-animate.js",
+              "node_modules/angular-aria/angular-aria.js",
+              "node_modules/angular-material/angular-material.js",
+              "node_modules/angular-resource/angular-resource.js",
+              "node_modules/angular-sanitize/angular-sanitize.js",
+              "node_modules/angular-ui-router/release/angular-ui-router.js",
+              "src/app/blocks/exception/exception.module.js",
+              "src/app/blocks/exception/exception-handler.provider.js",
+              "src/app/blocks/exception/exception.service.js",
+              "src/app/blocks/logger/logger.module.js",
+              "src/app/blocks/logger/logger.js",
+              "src/app/core/core.module.js",
+              "src/app/core/core.constants.js",
+              "src/app/core/core.config.js",
+              "src/app/core/core.routes.js",
+              "src/app/core/image.service.js",
+              "src/app/core/http-interceptor.js",
+              "src/app/widgets/widgets.module.js",
+              "src/app/widgets/character-detail.js",
+              "src/app/layout/layout.module.js",
+              "src/app/layout/shell.js",
+              "src/app/layout/topnav.js",
+              "src/app/layout/copyright.js",
+              "src/app/characters/characters.module.js",
+              "src/app/characters/characters.service.js",
+              "src/app/characters/character-list.js",
+              "src/app/characters/character-card.js",
+              "src/app/comics/comics.module.js",
+              "src/app/comics/comics.service.js",
+              "src/app/comics/comic-list.js",
+              "src/app/comics/comic-detail.js",
+              "src/app/quiz/quiz.module.js",
+              "src/app/quiz/quiz.service.js",
+              "src/app/quiz/quiz.js",
+              "src/app/quiz/question.js",
+              "src/app/templates.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-athens-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-athens-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-athens-demo:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-athens-demo-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "angular-athens-demo:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-athens-demo:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-athens-demo"
+}
