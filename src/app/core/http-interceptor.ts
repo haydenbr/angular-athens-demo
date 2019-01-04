@@ -33,7 +33,7 @@ import * as angular from 'angular';
 
         function response(response) {
             if (isApiCall(response.config.url)) {
-                response.data = response.data.data.results;
+                return response.data.data.results;
             }
 
             return response;

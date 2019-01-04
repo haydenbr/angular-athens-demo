@@ -24,6 +24,7 @@ import * as angular from 'angular';
 
         function charactersGetComplete(characters) {
             vm.characters = characters;
+            console.log(vm.characters);
             return vm.characters;
         }
 

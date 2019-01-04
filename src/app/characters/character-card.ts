@@ -23,16 +23,16 @@ import * as angular from 'angular';
         vm.getCharacterLink = getCharacterLink;
         vm.showCharacter = showCharacter;
 
-        function getCharacterImage(thumbnail) {
-            return imageService.getImage('landscape_incredible', thumbnail);
+        function getCharacterImage() {
+            return vm.character && imageService.getImage('landscape_incredible', vm.character.thumbnail);
         }
 
-        function getCharacterLink(character) {
-            return characterService.getCharacterDetailsUrl(character);
+        function getCharacterLink() {
+            return vm.character && characterService.getCharacterDetailsUrl(vm.character);
         }
 
-        function showCharacter(character) {
-            vm.onSelect({character: character});
+        function showCharacter() {
+            vm.onSelect({character: vm.character});
         }
     }
 })();

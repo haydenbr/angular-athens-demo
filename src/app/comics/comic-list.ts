@@ -29,6 +29,7 @@ import * as angular from 'angular';
         }
 
         function comicsGetComplete(comics) {
+          console.log('comics', comics);
             vm.comics = comics;
             return vm.comics;
         }
