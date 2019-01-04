@@ -1,5 +1,4 @@
 ﻿*.log
-bower_components
 build
 node_modules
 report

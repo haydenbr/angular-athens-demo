@@ -6,7 +6,7 @@
         .service('comicService', comicService);
     
     /* @ngInject */
-    function comicService($resource, apiUrl) {
+    function comicService($http, apiUrl) {
         var service = {
             getComics: getComics
         };
@@ -14,7 +14,11 @@
         return service;
 
         function getComics(characterId) {
-            return $resource(apiUrl + 'characters/' + characterId + '/comics').query().$promise;
+					return $http({
+						url: apiUrl + 'characters/' + characterId + '/comics',
+						method: 'GET',
+						headers: {  }
+					});
         }
     }
 })();

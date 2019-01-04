@@ -6,7 +6,7 @@
         .service('quizService', quizService);
     
     /* @ngInject */
-    function quizService($resource, $filter, apiUrl) {
+    function quizService($http, $filter, apiUrl) {
         var questions = [
             {
               no: 1,
@@ -110,7 +110,11 @@
 
             var heroId = Object.keys(ranking).reduce(function(a, b) { return ranking[a] > ranking[b] ? a : b; });
 
-            return $resource(apiUrl + 'characters/' + heroId).query().$promise;
+						return $http({
+							url: apiUrl + 'characters/' + heroId,
+							method: 'GET',
+							headers: {  }
+						});
         }
 
         function getQuestions() {

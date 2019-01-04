@@ -7,8 +7,8 @@
         .constant('toastr', toastr)
         .constant('toastTimeout', 1500)
         .constant('settings', getSettings())
-        .constant('apiUrl', '//gateway.marvel.com/v1/public/')
-        .constant('apiKey', '<Your public key here>');
+        .constant('apiUrl', 'https://gateway.marvel.com/v1/public/')
+        .constant('apiKey', '060596d5ba9d3fc738a34f714561f578');
 
     function getSettings() {
         var settings = {
@@ -19,4 +19,4 @@
 
         return settings;
     }
-})(); 
+})();

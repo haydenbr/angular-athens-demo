@@ -6,7 +6,7 @@
         .service('characterService', characterService);
     
     /* @ngInject */
-    function characterService($resource, $filter, apiUrl) {
+    function characterService($http, $filter, apiUrl) {
         var service = {
             getCharacters: getCharacters,
             getCharacterDetailsUrl: getCharacterDetailsUrl
@@ -15,7 +15,11 @@
         return service;
 
         function getCharacters(term) {
-            return $resource(apiUrl + 'characters').query({nameStartsWith: term}).$promise;
+            return $http({
+							url: apiUrl + 'characters',
+							method: 'GET',
+							params: { nameStartsWith: term }
+						});
         }
 
         function getCharacterDetailsUrl(character) {
